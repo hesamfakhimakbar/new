@@ -1,0 +1,35 @@
+POST http://127.0.0.1:8000/login/
+Content-Type: application/json
+
+{
+    "email": "ali@gmail.com",
+    "password": "fP8BAv8fB6$wCXJ"
+}
+
+###
+
+POST http://127.0.0.1:8000/signup/
+Content-Type: application/json
+
+{
+    "password": "Pass123434",
+    "email": "newuser2@example.com"
+}
+
+###
+
+GET http://127.0.0.1:8000/test_token/
+Content-Type: application/json
+Authorization: Token 45e5a8569df6e924e52ba3fb6ef90a1c0fcca0a0
+
+{}
+
+
+###
+POST http://127.0.0.1:8000/send_message/
+Content-Type: application/json
+Authorization: Token 45e5a8569df6e924e52ba3fb6ef90a1c0fcca0a0
+
+{
+    "message": "hi there! this is a test from test.rest file."
+}
